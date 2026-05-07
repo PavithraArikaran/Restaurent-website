@@ -18,14 +18,21 @@ export default function Navbar({
       aria-label="Main"
     >
       <div className="mx-auto grid max-w-6xl grid-cols-1 gap-3 px-4 py-4 lg:grid-cols-3 lg:items-center">
-     <div className="flex items-center gap-4 ">
-          <button
-            type="button"
-            onClick={() => scrollToId('top')}
-            className="font-display shrink-0 text-left text-xl font-semibold tracking-tight text-amber-50 transition hover:text-amber-100"
-          >
-            {BRAND_NAME}
-          </button>
+      <div className="flex items-center gap-4">
+  <button
+    type="button"
+    onClick={() => scrollToId("top")}
+    className="flex items-center gap-3 font-display shrink-0 text-left text-xl font-semibold tracking-tight text-amber-50 transition hover:text-amber-100"
+  >
+    <img
+      src="/public/menu/zaika-table-logo.png"
+      alt="Logo"
+      className="w-12 h-12 object-contain"
+    />
+
+    <span>{BRAND_NAME}</span>
+  </button>
+
           <div className="hidden items-center gap-2 md:flex ">
             <button
               type="button"
